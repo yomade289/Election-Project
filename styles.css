@@ -1,0 +1,217 @@
+/* GLOBAL RESET FOR RESPONSIVENESS */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #fed0c9;
+}
+
+/* HEADER */
+.header {
+  background: #fed0c9;
+  color: white;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+h1 {
+  font-family: 'Poppins', Arial, sans-serif;   /* Change font */
+  font-size: 32px;                              /* Adjust size */
+  font-weight: 700;                             /* Boldness */
+  margin-bottom: 10px;
+}
+
+.header-title {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.header-subtext {
+  margin-top: 10px;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+/* MAIN CONTENT */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtext {
+  color: #5b5a5a;
+  font-family: 'Poppins', Arial, sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.5;
+}
+
+label {
+  display: block;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-weight: bold;
+  margin: 20px 0 8px;
+}
+
+/* RESPONSIVE INPUTS */
+select,
+textarea,
+input[type="file"],
+input[type="text"],
+input[type="checkbox"] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 2px solid #b2735a;
+  font-size: 16px;
+}
+
+/* Fix for textarea responsiveness */
+textarea {
+  height: 120px;
+  resize: none;
+}
+
+/* Checkbox container */
+.checkbox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.checkbox input {
+  width: auto; /* prevent checkbox from stretching */
+}
+
+/* BUTTON */
+.submit-btn {
+  background: #0da78a;
+  color: white;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 18px;
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+/* RECENT REPORTS SECTION */
+.recent-section {
+  background: #7e2c07;
+  color: white;
+  padding: 30px 20px;
+  margin-top: 50px;
+
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  flex-wrap: wrap; /* RESPONSIVE FIX */
+}
+
+.recent-left {
+  flex: 1 1 200px;
+}
+
+.recent-title {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.recent-right {
+  flex: 3 1 300px;
+}
+
+.report-card {
+  background: white;
+  color: black;
+  border-radius: 15px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.time {
+  color: green;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.alert {
+  color: red;
+}
+
+.type {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details {
+  font-size: 14px;
+  color: #444;
+}
+
+/* RESPONSIVENESS BREAKPOINTS */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 24px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .recent-section {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  select,
+  textarea,
+  input[type="file"] {
+    font-size: 14px;
+    padding: 12px;
+  }
+
+  textarea {
+    height: 100px; /* Better mobile fit */
+  }
+
+  .submit-btn {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .report-card {
+    padding: 12px;
+  }
+
+  .recent-title {
+    font-size: 20px;
+  }
+}
+
+.logo {
+  width: 120px;       /* Adjust this to make smaller */
+  height: auto;       /* Keeps original proportions */
+  display: block;
+}
+
+/* Make it scale on small screens */
+@media (max-width: 480px) {
+  .logo {
+    width: 90px;     /* smaller on mobile */
+  }
+}

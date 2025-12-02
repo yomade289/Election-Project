@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Report an Election Incident</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <a href="#"><img src="image/osundecides.png" class="logo"></a>
+
+    <h1>Report an Election Incident</h1>
+    <p class="subtext">Your voice matters. Help promote fair elections by reporting issues you witness.</p>
+
+    <label>Incident Type</label>
+    <select>
+      <option>Vote Buying</option>
+      <option>Thuggery</option>
+      <option>Absence of officials</option>
+      <option>Equipment Failure</option>
+    </select>
+
+    <label>Describe What Happened</label>
+    <textarea placeholder="Describe the incident..."></textarea>
+
+    <label>Upload Evidence (optional)</label>
+    <input type="file" />
+
+    <div class="checkbox">
+      <input type="checkbox" checked />
+      <span>Submit Anonymously</span>
+    </div>
+
+    <button class="submit-btn">Submit Report</button>
+  </div>
+
+  <!-- RECENT REPORTS SECTION -->
+  <div class="recent-section">
+    <div class="recent-title">Recent Reports</div>
+
+    <div class="reports-row">
+      <div class="report-card">
+        <div class="time">✔ 2 minutes ago</div>
+        <div class="type">Anonymous - Vote Buying</div>
+        <div class="details">People handing out cash before voting...</div>
+      </div>
+
+      <div class="report-card">
+        <div class="time alert">⚠ 2 minutes ago</div>
+        <div class="type">Anonymous - Equipment Failure</div>
+        <div class="details">Polling machine malfunctioning...</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
